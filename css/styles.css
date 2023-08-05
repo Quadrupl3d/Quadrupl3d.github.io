@@ -1,0 +1,272 @@
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Rubik', sans-serif;
+  overflow: auto !important;
+  padding-right: 0 !important;
+}
+
+.navbar-brand {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400px;
+  font-size: 2rem;
+}
+.nav-item {
+  width: 110px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  margin-left: 10px;
+}
+.HEADER {
+  white-space: nowrap;
+}
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+}
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link.clicked {
+  color: #ff704d;
+}
+.navbar-nav .nav-item:hover .nav-link,
+.navbar-nav .nav-item:focus .nav-link {
+  color: #ff704d;
+}
+
+.Quad-btn-1 {
+  background-color: #e60000;
+  color: white;
+  transition: color 0.3s;
+  z-index: 2;
+  position: relative;
+}
+.Quad-btn-1:hover {
+  color: #fff;
+  background-color: #e60000;
+  /* border-color: #e60000; */
+}
+.Quad-btn-1:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: #e60000;
+}
+.Quad-btn-2 {
+  background-color: #000;
+  color: white;
+  border-color: #fff;
+  transition: color 0.3s;
+  font-size: small;
+}
+.Quad-btn-2:hover {
+  color: #fff;
+  background-color: #e60000;
+  border-color: #e60000;
+}
+.Quad-btn-2:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: none;
+}
+.span {
+  color: red;
+}
+@media (min-width:360px) and (max-width:990px) {
+  .nav-item {
+    width: fit-content;
+  }
+}
+
+.enlarge-on-hover {
+  transition: transform 0.3s ease-in-out;
+}
+
+.enlarge-on-hover:hover,
+.enlarge-on-hover:focus {
+  transform: scale(1.06);
+  /* Increase the scale value to enlarge the icon further */
+}
+@media (max-width:991.98px) {
+  .navbar-toggler {
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
+  .fa-bars {
+    background-size: contain;
+    width: 24px;
+    height: 24px;
+  }
+
+  .navbar-nav .nav-item {
+    margin-bottom: 2px;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 3px 0;
+  }
+  
+}
+
+.navbar-dark .navbar-nav {
+  color: #fff;
+}
+
+.navbar-dark .offcanvas-header {
+  background-color: #000000;
+  color: #fff;
+}
+
+.navbar-dark .offcanvas-body {
+  background-color: #000000;
+}
+
+.register-link {
+  color: white;
+  text-decoration: none;
+}
+
+.register-link:hover {
+  color: #ff704d;
+}
+
+
+/* Breadcrumb item */
+.BCIT {
+  color: inherit;
+  text-decoration-line: underline;
+  text-decoration-color: red;
+  text-underline-offset: 4px;
+}
+
+#Breadcrumb {
+  margin: 15px 4%;
+}
+
+.bread {
+  border-bottom: solid 2px blanchedalmond;
+}
+
+.breadcrumb-item.active {
+  color: red;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+  color: red;
+}
+
+/* Installing the video player to play custom videos on website */
+#video-player-container {
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#video-player {
+  width: 100%;
+  height: auto;
+}
+
+/* Curly braces animation */
+.bracket-content-left {
+  opacity: 0;
+  transition: opacity 0.8s ease;
+  color: red;
+  font-size: 30px;
+  position: relative;
+  z-index: 4;
+  left: 6px;
+}
+.bracket-content-right {
+  opacity: 0;
+  transition: opacity 0.8s ease;
+  color: red;
+  font-size: 30px;
+  position: relative;
+  z-index: 4;
+  right: 6px;
+}
+.double {
+  font-size: 42px;
+}
+/* .fade-in {
+  opacity: 0;
+  animation: fade-in-animation 1.5s ease forwards;
+}
+@keyframes fade-in-animation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+} */
+.item:hover .bracket-content-left,
+.item:hover .bracket-content-right {
+  opacity: 1;
+}
+.pop-up {
+  transform: scale(1.05);
+  transition: transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.item:hover .pop-up {
+  transform: scale(1) translateY(0);
+}
+.pop-up .bracket-content-left,
+.pop-up .bracket-content-right {
+  opacity: 1;
+}
+@media (max-width:991.98px) {
+  .bracket-content-right {
+    font-size: 20px;
+    right: 0px;
+  }
+  .bracket-content-left {
+    font-size: 20px;
+    left: 0px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

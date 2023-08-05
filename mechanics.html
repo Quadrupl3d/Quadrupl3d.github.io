@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <!-- Font awesome -->
+  <script src="https://kit.fontawesome.com/6cba281947.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.0/css/all.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-solid.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-regular.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-light.css">
+
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Rubik:wght@300;400;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap & jQuery-->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/course-details.css">
+
+  <meta charset="utf-8">
+  <title>Quadrupl3d</title>
+</head>
+
+<body>
+
+
+
+  <!-- Header -->
+  <header class="HEADER" id="header">
+    <div class="d-flex flex-row">
+      <div class="d-flex me-auto p-2 mx-3">
+        <div class="align-self-center"><a class="register-link" href="#"><i class="fa-solid fa-cube" style="color: #ff0000;"></i> Register/Sign-In</button></a></div>
+      </div>
+      <div class="d-flex p-2 mx-3 my-2">
+        <div class="align-self-center"><a href="#">
+            <button type="button" class="btn btn-sm Quad-btn-1 ms-auto">Login</button>
+          </a></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark NAVBAR">
+    <a class="navbar-brand ms-3 me-2 pt-2" href="#"><img src="images/LOGO.png" alt="image" width="60px;"
+        height="60px;">uadrupl<span class="span">3</span>d</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fa-solid fa-bars-progress fa-fade" style="color: #ff0505;"></i>
+    </button>
+    <div class="offcanvas offcanvas-start" id="navbarNav" tabindex="-1" aria-labelledby="navbarNavLabel">
+      <div class="offcanvas-header justify-content-center">
+        <h5 class="offcanvas-title mx-auto" id="navbarNavLabel"><img src="images/LOGO.png" alt="image" width="70px;"
+            height="70px;">uadrupl<span class="span">3</span>d</h5>
+        <i class="fa-sharp fa-solid fa-xmark-large fa-lg" id="closeOffcanvas" style="color: #ff0f0f;"></i>
+      </div>
+      <div class="offcanvas-body">
+        <div class="d-flex justify-content-center">
+          <ul class="navbar-nav justify-content-start flex-wrap">
+
+
+            <li class="nav-item d-flex flex-row justify-content-center">
+              <div class="d-flex align-items-center item">
+                <div class="bracket">
+                  <span class="bracket-content-left">{</span>
+                </div>
+                <div class="hoverable">
+                  <a class="nav-link" href="#">Home</a>
+                </div>
+                <div class="bracket">
+                  <span class="bracket-content-right">}</span>
+                </div>
+              </div>
+            </li>
+
+
+            <li class="nav-item d-flex flex-row justify-content-center">
+              <div class="d-flex align-items-center item">
+                <div class="bracket">
+                  <span class="bracket-content-left">{</span>
+                </div>
+                <div class="hoverable">
+                  <a class="nav-link" href="#">Channels</a>
+                </div>
+                <div class="bracket">
+                  <span class="bracket-content-right">}</span>
+                </div>
+              </div>
+            </li>
+
+            <li class="nav-item d-flex flex-row justify-content-center">
+              <div class="d-flex align-items-center item">
+                <div class="bracket">
+                  <span class="bracket-content-left">{</span>
+                </div>
+                <div class="hoverable">
+                  <a class="nav-link" href="#">Courses</a>
+                </div>
+                <div class="bracket">
+                  <span class="bracket-content-right">}</span>
+                </div>
+              </div>
+            </li>
+
+
+            <li class="nav-item d-flex flex-row justify-content-center">
+              <div class="d-flex align-items-center item">
+                <div class="bracket">
+                  <span class="bracket-content-left double">{</span>
+                </div>
+                <div class="hoverable">
+                  <a class="nav-link" href="#">Bug Bounty</a>
+                </div>
+                <div class="bracket">
+                  <span class="bracket-content-right double">}</span>
+                </div>
+              </div>
+            </li>
+
+            <li class="nav-item d-flex flex-row justify-content-center">
+              <div class="d-flex align-items-center item">
+                <div class="bracket">
+                  <span class="bracket-content-left">{</span>
+                </div>
+                <div class="hoverable">
+                  <a class="nav-link" href="#">Services</a>
+                </div>
+                <div class="bracket">
+                  <span class="bracket-content-right">}</span>
+                </div>
+              </div>
+            </li>
+
+
+            <li class="nav-item d-flex flex-row justify-content-center">
+              <div class="d-flex align-items-center item">
+                <div class="bracket">
+                  <span class="bracket-content-left double">{</span>
+                </div>
+                <div class="hoverable">
+                  <a class="nav-link" href="#">Quadrupl<span class="span">3</span>d Merchandise</a>
+                </div>
+                <div class="bracket">
+                  <span class="bracket-content-right double">}</span>
+                </div>
+              </div>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li> -->
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+
+
+
+  <!-- Breadcrumb -->
+  <section id="Breadcrumb">
+    <nav class="bread" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a class="BCIT" href="#">Home</a></li>
+        <li class="breadcrumb-item"><a class="BCIT" href="#">Courses</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Mechanics</li>
+      </ol>
+    </nav>
+  </section>
+
+  <section id="Course-teaser">
+    <div class="d-flex flex-row mt-3">
+      <h1>Master the art of solving mechanics</h1>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="d-flex flex-row mb-1 flex-wrap">
+          <div class="p-1">
+            <div class="d-flex flex-column mb-1 COL">
+              <div class="p-2"><i class="fa-solid fa-chalkboard-user" style="color: #ff0000;"></i> Mentor</div>
+              <div class="p-2">Instructor name</div>
+            </div>
+          </div>
+          <div class="p-1">
+            <div class="d-flex flex-column mb-1 COL">
+              <div class="p-2"><i class="fa-solid fa-barcode" style="color: #ff0000;"></i> Tier</div>
+              <div class="p-2">IV</div>
+            </div>
+          </div>
+          <div class="p-1">
+            <div class="d-flex flex-column mb-1 COL">
+              <div class="p-2"><i class="fa-solid fa-video" style="color: #ff0000;"></i> Lectures</div>
+              <div class="p-2">111</div>
+            </div>
+          </div>
+          <div class="p-1">
+            <div class="d-flex flex-column mb-1 COL">
+              <div class="p-2"><i class="fa-solid fa-clock" style="color: #ff0000;"></i> Duration</div>
+              <div class="p-2">3 hours</div>
+            </div>
+          </div>
+          <div class="p-1">
+            <div class="d-flex flex-column mb-1 COL">
+              <div class="p-2"><i class="fa-solid fa-user-group" style="color: #ff0000;"></i> Students</div>
+              <div class="p-2">0</div>
+            </div>
+          </div>
+          <div class="p-1">
+            <div class="d-flex flex-column mb-1 COL">
+              <div class="p-2"><i class="fa-solid fa-star" style="color: #ff0000;"></i> Review</div>
+              <div class="p-2"><a><i class="STAR fa-regular fa-star" style="color: #ff0000;"></i>
+                  <i class="STAR fa-regular fa-star" style="color: #ff0000;"></i>
+                  <i class="STAR fa-regular fa-star" style="color: #ff0000;"></i>
+                  <i class="STAR fa-regular fa-star" style="color: #ff0000;"></i>
+                  <i class="STAR fa-regular fa-star" style="color: #ff0000;"></i></a>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="p-1 d-flex">
+            <div class="d-flex flex-column mb-1 COLF">
+              
+
+              <div class="d-flex justify-content-center my-1">
+              <div class="d-flex flex-row mt-1 mb-1" style="width: 180px;">
+                <div class="d-flex content align-self-center">
+                  <a href="#" class="links"> Add to cart</a>
+                </div>
+                <div class="ms-auto">
+                  <button type="button" class="btn register-button Quad-btn-3 add-to-cart">
+                    <h6><i class="fa-solid fa-cart-plus" style="color: white;"></i></h6>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+      
+            
+
+              <div class="d-flex justify-content-center mb-1">
+                  <div class="mb-0">
+                  <button type="submit" class="btn Quad-btn-3 register-button" style="width: 180px;">Buy now at <i class="fa-solid fa-indian-rupee-sign"></i>3000</button>
+                  </div>
+              </div>
+
+        
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+
+
+      <div class="col-lg-4" id="video-player-container">
+        <div class="d-flex p-2">
+          <div class="d-flex align-self-center">
+            <div class="d-flex justify-content-center">
+              <video id="video-player" controls>
+                <source src="/courses/Mechanics/cinematic-mechanics.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="SCROLLSPY">
+    <nav id="navbar-example2" class="navbar navbar-dark px-3 mb-3">
+      <ul class="nav nav-pills nav-fill">
+        <li class="d-flex">
+          <a class="nav-link HOVER1 justify-content-center" href="#scrollspyHeading1" tabindex="0">Description</a>
+        </li>
+        <li class="d-flex">
+          <a class="nav-link HOVER1 justify-content-center" href="#scrollspyHeading2">Curriculum</a>
+        </li>
+        <li class="d-flex">
+          <a class="nav-link HOVER1 justify-content-center" href="#scrollspyHeading3">Instructor</a>
+        </li>
+      </ul>
+    </nav>
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
+      data-bs-smooth-scroll="true" class="p-3" tabindex="0" style="background-color: #1f1f2d; color: #d9d9d9;">
+      <section id="scrollspyHeading1" class="heading1">
+        <div class="d-flex flex-row mt-2">
+          <h3>Detailed course description</h3>
+        </div>
+        <div class="row mb-2">
+          <div class="col-md-7 mb-3">
+            <p>Build an explosive power of solving problems in mechanical physics, you will find
+              it challenging, sometimes frustrating, occasionally painful, and often richly
+              rewarding. In this course of mechanical physics 90% of concepts are explained
+              using POLAR COORDINATES from SCRATCH. Currently, this course consists of
+              chapters - kinematics, translational dynamics and rotational dynamics along with
+              some prerequisites required for the crystal clear understanding of this course.</p>
+          </div>
+
+          <div class="col">
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" data-pause="hover"
+              style="border: solid 3px #494969">
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2000">
+                  <img src="/courses/Mechanics/tension.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img src="/courses/Mechanics/poster-mechanics.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img src="/courses/Mechanics/solid.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="row mt-3 mb-3">
+          <div class="col">
+            <p><strong>MASTER THE ART OF SOLVING MECHANICS: THEORY VIA MATHEMATICAL
+              PHYSICS</strong><br>
+            <em>PREREQUISITES EXPLAINED:</em> Infinitesimal elements [ 1D,2D and 3D
+            elements{all explained using polar coordinates}] + polar coordinates + cylindrical
+            coordinates + spherical coordinates.
+            KINEMATICS - particle motion in 1D, 2D and 3D, additive property of angular
+            velocities, complete theory of DOUBLE ROTATION and the application of V=WR,
+            relative motion, standard and unique problems based on chases of kinematics,
+            projectile motion, kinematics of particle and rigid body, kinematics of a
+            parallelogram, kinematics of a square frame.<br><br>
+            <em>TRANSLATIONAL DYNAMICS:</em> Newtons laws of motion explained through
+            problems, conservation of strings, weaving constraints into coordinates, 10+
+            ATWOOD'S machines, infinite ATWOOD'S machine, infinite pulleys, wedge block
+            constraint, calculation of COM of semi-circular ring, disc, hollow sphere, solid
+            sphere, spherical cap, plated triangle, cylindrical segment(using triple
+            integration), calculation of center of mass of square fractal and triangle fractal,
+            constant ratio(solved using Leibniz theorem and definite integration) , very basic
+            to Olympiad level theory of momentum conservation and it's applications, pulling
+            a square, H-Shape, pulling a mass, impulse momentum theory(rotation of a free
+            body about COM, BYU question 3,CYU question 1 + more RELEVANT questions
+            may be updated), Spring mass system, kinetic energy in center of mass frame.<br><br>
+            <em>ROTATIONAL DYNAMICS:</em> theory of complete rotational motion from
+            Olympiad point of view as it is the toughest chapter of entire physics, derivation
+            of angular momentum of a rigid body about stationary axis and general axis,
+            moment of inertia calculation of semi-circular ring about com, solid cone, hollow
+            cone, hollow sphere, solid sphere, uniform rod, hollow cylinder, solid cylinder,solid cuboid systems with
+            cavity, calculating moment of inertia using squashing ,
+            perpendicular axis theorem, parallel axis theorem, solid cone about a slanted
+            axis, calculation of angular momentum and torque about a point and an axis.
+            Introduction to CTRM(combined translational and rotational motion), pure
+            rolling: special case of CTRM, radius of curvature(basics), parametric coordinates
+            of a cycloid, Disc rolling inside a cylindrical shell of double radius, Triple rolling:<em>COMPLETE
+              TUTORIAL OF DESMOS</em>
+            COMPLETE SOLID ANGLES THEORY + ADV. TO OLYMPIAD LEVEL
+            QUESTIONS COVERED<br><br>
+            <em>ENERGY + MOMENTUM + ROTATION + TRANSLATION + CONSTRAINT =
+              MECHANICS:</em> (currently under updation)
+            THIS IS WHERE EVERYTHING CLICKS TOGETHER : In this section there will be
+            questions in which all the concepts of mechanics will be integrated together.
+            Remaining topics collisions, conservation of angular momentum, + few
+            questions based on equilibrium statics and work, power and energy.
+            Unlike my electrostatics course, I've not solved complete pathfinder as it is too
+            much time consuming as well as irrelevant for some students as well, instead in
+            this course I've integrated some of the questions of pathfinder in the theory. So,
+            if u follow along the curriculum you'll definitely sail through it.<br> As mechanics is
+            the complete start of JEE AND OLYMPIAD physics so I've explained each and
+            every minute detail so ANYONE CAN LEARN FROM SCRATCH. In this course you
+            will experience the depth of <i>"MATHEMATICAL AND COMPETETIVE PHYSICS"</i> which will in turn bolster
+            your concepts for the upcoming chapters of physics.<br> Mechanics is the BASE OF
+            COMPLETE JEE AND OLYMPIAD PHYSICS, so I've exclusively designed the
+            theory of mechanics by using class notes, test papers of Allen score, DC Pandey,
+            200PPP, 300 creative problems, classical mechanics, Berkeley physics Allen's
+            module, Pathfinder and I've incorporated the complete theory of
+            INTERNATIONAL OLYMPIADS from scratch. As you'll go through the lectures
+            you'll encounter a number of problems which you've never experienced or seen
+            in your entire physics journey so let's break each and every bone of Competitive
+            physics by breaking down tough problems into simpler ones.<br>
+            So what are u waiting for?
+            Enroll in course and boost your technical skills of solving mechanics.
+          </p>
+          </div>
+        </div>
+
+
+        <div class="d-flex flex-row pt-3">
+          <h3>What you'll Learn ?</h3>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <div class="d-flex flex-row mb-1 flex-wrap">
+              <div class="d-flex flex-column mb-1">
+                <div class="p-2"><i class="fa-solid fa-check"></i> Learn to think </div>
+                <div class="p-2"><i class="fa-solid fa-check"></i> How to tackle Advanced level
+                  problems in school physics ?</div>
+                <div class="p-2"><i class="fa-solid fa-check"></i> Learn to plot anything using
+                  DESMOS: The graphing claculator</div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="d-flex flex-row mb-1 flex-wrap">
+              <div class="d-flex flex-column mb-1">
+                <div class="p-2"><i class="fa-solid fa-check"></i> How to solve Olympiad level
+                  questions</div>
+                <div class="p-2"><i class="fa-solid fa-check"></i> Decipher pathfinder: The
+                  ultimate path to Olympiads</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+  <section id="scrollspyHeading2" class="heading2">
+    <div class="d-flex flex-row mt-3">
+      <h3>Curriculum</h3>
+    </div>
+
+    <div class="accordion text accordion-flush mb-3" id="accordionPanelsStayOpenExample">
+      <div class="accordion-item ">
+        <h2 class="accordion-header">
+          <button class="accordion-button custom-accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+
+      
+
+          <div class="d-flex align-items-center">
+              <i class="fa-solid fa-sort-down"></i>INFINITESIMAL ELEMENTS
+          </div>
+          </button>
+        </h2>
+
+        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+          <div class="accordion-body p-0 ">
+            <div class="d-flex flex-column">
+
+              <div class="py-0 HOVER2">
+                <div class="d-flex flex-row ms-3">
+                  <div class="px-0 py-2"><i class="fa-solid fa-video"></i></div>
+                  <div class="px-1 py-2 lecture">Lecture 1.1</div>
+                  <div class="p-2 align-self-center ms-5">
+                    <a class="links ms-0 px-1 " href="#"><i class="PREVIEW fa-sharp fa-regular fa-circle-play fa-xl"></i></a>
+                    <a href="#" class="links">(M01) {1D} ONE DIMENSIONAL ELEMENTS</a>
+                  </div>
+                </div>
+              </div>
+                
+              <div class="py-0 HOVER2">
+                <div class="d-flex flex-row ms-3">
+                  <div class="px-0 py-2"><i class="fa-solid fa-video"></i></div>
+                  <div class="px-1 py-2 lecture">Lecture 1.2</div>
+                  <div class="p-2 ms-5"><a href="#" class="links">(M02) {2D} TWO DIMENTIONAL ELEMENTS ON 2D POLAR PLANE</a></div>
+                </div>
+              </div>
+
+              <div class="py-0 HOVER2">
+                <div class="d-flex flex-row ms-3">
+                  <div class="px-0 py-2"><i class="fa-solid fa-video"></i></div>
+                  <div class="px-1 py-2 lecture">Lecture 1.3</div>
+                  <div class="p-2 ms-5"><a href="#" class="links">(M03) {3D} THREE DIMENTIONAL ELEMENTS, POLAR COORDINATES SIMPLIFIED, ADV+++</a></div>
+                </div>
+              </div>
+
+              <div class="py-0 HOVER2">
+                <div class="d-flex flex-row ms-3">
+                  <div class="px-0 py-2"><i class="fa-solid fa-video"></i></div>
+                  <div class="px-1 py-2 lecture">Lecture 1.4</div>
+                  <div class="p-2 ms-5"><a href="#" class="links">(M04) CYLINDRICAL COORDINATES SIMPLIFIED</a></div>
+                </div>
+              </div>
+              
+              <div class="py-0 HOVER2">
+                <div class="d-flex flex-row ms-3">
+                  <div class="px-0 py-2"><i class="fa-solid fa-video"></i></div>
+                  <div class="px-1 py-2 lecture">Lecture 1.5</div>
+                  <div class="p-2 ms-5"><a href="#" class="links">(M05) FINDING AREA OF SPHERICAL CAP FROM 2 METHODS, ADV+</a></div>
+                </div>
+              </div>
+
+              <div class="py-0 HOVER2">
+                <div class="d-flex flex-row ms-3">
+                  <div class="px-0 py-2"><i class="fa-solid fa-video"></i></div>
+                  <div class="px-1 py-2 lecture">Lecture 1.6</div>
+                  <div class="p-2 ms-5"><a href="#" class="links">(M06) POLAR COORDINATES EXPLAINED IN DETAIL</a></div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+        <button class="accordion-button custom-accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#2" aria-expanded="true" aria-controls="panelsStayOpen-collapseTwo">
+        <div class="d-flex align-items-center"><i class="fa-solid fa-sort-down"></i> EPIC CHASES OF KINEMATICS</div>
+        </button>
+        </h2>
+        <div id="2" class="accordion-collapse collapse show">
+          <div class="accordion-body">
+            <div class="d-flex flex-column">
+              <div class="py-0 HOVER2">
+                <div class="d-flex flex-row ms-3">
+                  <div class="px-0 py-2"><i class="fa-solid fa-video"></i></div>
+                  <div class="px-1 py-2 lecture">Lecture 2.1</div>
+                  <div class="p-2 ms-5"><a href="#" class="links">(M07) (BYU) 39 APPLICATION OF 2D POLAR COORDINATES AND DEMYSTIFIED CHASE!</a>
+                  </div>
+                </div>
+              </div>
+              <div class="py-0 HOVER2">
+                <div class="d-flex flex-row ms-3">
+                  <div class="px-0 py-2"><i class="fa-solid fa-video"></i></div>
+                  <div class="px-1 py-2 lecture">Lecture 2.2</div>
+                  <div class="p-2 ms-5"><a href="#" class="links">(M08) (CYU) 37 EASY CHASE, POLAR COORDINATES, 2 METHODS</a></div>
+                </div>
+              </div>
+              <div class="py-0 HOVER2">
+                <div class="d-flex flex-row ms-3">
+                  <div class="px-0 py-2"><i class="fa-solid fa-video"></i></div>
+                  <div class="px-1 py-2 lecture">Lecture 2.3</div>
+                  <div class="p-2 ms-5"><a href="#" class="links">(M09) (CYU) 37 PART B</a></div>
+                </div>
+              </div>
+              <div class="py-0 HOVER2">
+                <div class="d-flex flex-row ms-3">
+                  <div class="px-0 py-2"><i class="fa-solid fa-video"></i></div>
+                  <div class="px-1 py-2 lecture">Lecture 2.4</div>
+                  <div class="p-2 ms-5"><a href="#" class="links">(M10) TOUGHEST CHASE IN HISTORY OF KINEMATICS</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button custom-accordion-button" type="button" data-bs-toggle="collapse"
+            data-bs-target="#3" aria-expanded="true" aria-controls="panelsStayOpen-collapseThree">
+            <div class="d-flex align-items-center"><i class="fa-solid fa-sort-down"></i> KINEMATICS FOR
+              OLYMPIADS AND JEE ADVANCED PHYSICS
+            </div>
+          </button>
+        </h2>
+        <div id="3" class="accordion-collapse collapse show">
+          <div class="accordion-body">
+            <div class="d-flex flex-column">
+              <div class="py-0 HOVER2">
+                <div class="d-flex flex-row ms-3">
+                  <div class="px-0 py-2"><i class="fa-solid fa-video"></i></div>
+                  <div class="px-1 py-2 lecture">Lecture 3.1</div>
+                  <div class="p-2 ms-5"><a href="#" class="links"></a>(M11) WATERING A GARDEN</div>
+                </div>
+              </div>
+              <div class="py-0 HOVER2">
+                <div class="d-flex flex-row ms-3">
+                  <div class="px-0 py-2"><i class="fa-solid fa-video"></i></div>
+                  <div class="px-1 py-2 lecture">Lecture 3.2</div>
+                  <div class="p-2 ms-5"><a href="#" class="links"></a>(M12) TIMES TIMES*</div>
+                </div>
+              </div>
+              <div class="py-0 HOVER2">
+                <div class="d-flex flex-row ms-3">
+                  <div class="px-0 py-2"><i class="fa-solid fa-video"></i></div>
+                  <div class="px-1 py-2 lecture">Lecture 3.3</div>
+                  <div class="p-2 ms-5"><a href="#" class="links">(M13) REGULAR N-GON***</a> </div>
+                </div>
+              </div>
+              <div class="py-0 HOVER2">
+                <div class="d-flex flex-row ms-3">
+                  <div class="px-0 py-2"><i class="fa-solid fa-video"></i></div>
+                  <div class="px-1 py-2 lecture">Lecture 3.4</div>
+                  <div class="p-2 ms-5"><a href="#" class="links">(M14) (200PPP) KINEMATICS OF A FREE SQUARE FRAME</a> </div>
+                </div>
+              </div>
+              <div class="py-0 HOVER2">
+                <div class="d-flex flex-row ms-3">
+                  <div class="px-0 py-2"><i class="fa-solid fa-video"></i></div>
+                  <div class="px-1 py-2 lecture">Lecture 3.5</div>
+                  <div class="p-2 ms-5"><a href="#" class="links">(M15) (CYU) 36 KINEMATICS OF A PARALLELOGRAM</a> </div>
+                </div>
+              </div>
+              <div class="py-0 HOVER2">
+                <div class="d-flex flex-row ms-3">
+                  <div class="px-0 py-2"><i class="fa-solid fa-video"></i></div>
+                  <div class="px-1 py-2 lecture">Lecture 3.6</div>
+                  <div class="p-2 ms-5"><a href="#" class="links">(M16) KINEMATICS OF A PARTICLE AND RIGID BODY, MATHEMATICAL PHYSICS</a> </div>
+                </div>
+              </div>
+              <div class="py-0 HOVER2">
+                <div class="d-flex flex-row ms-3">
+                  <div class="px-0 py-2"><i class="fa-solid fa-video"></i></div>
+                  <div class="px-1 py-2 lecture">Lecture 3.7</div>
+                  <div class="p-2 ms-5"><a href="#" class="links">(M17) *** ADDITIVE PROPERTY OF ANGULAR VELOCITIES</a> </div>
+                </div>
+              </div>
+              <div class="py-0 HOVER2">
+                <div class="d-flex flex-row ms-3">
+                  <div class="px-0 py-2"><i class="fa-solid fa-video"></i></div>
+                  <div class="px-1 py-2 lecture">Lecture 3.8</div>
+                  <div class="p-2 ms-5"><a href="#" class="links">(M18) INVERSE SQUARED FORCE</a> </div>
+                </div>
+              </div>
+              <div class="py-0 HOVER2">
+                <div class="d-flex flex-row ms-3">
+                  <div class="px-0 py-2"><i class="fa-solid fa-video"></i></div>
+                  <div class="px-1 py-2 lecture">Lecture 3.9</div>
+                  <div class="p-2 ms-5"><a href="#" class="links">(M19) * INTRODUCTION TO CTRM: KINEMATICS OF LEANING LADDER</a> </div>
+                </div>
+              </div>
+              <div class="py-0 HOVER2">
+                <div class="d-flex flex-row ms-3">
+                  <div class="px-0 py-2"><i class="fa-solid fa-video"></i></div>
+                  <div class="px-1 py-2 lecture">Lecture 3.10</div>
+                  <div class="p-2 ms-5"><a href="#" class="links">(M20) H-SHAPE** AND PULLING A SQUARE **</a> </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button custom-accordion-button" type="button" data-bs-toggle="collapse"
+            data-bs-target="#4" aria-expanded="true" aria-controls="panelsStayOpen-collapseTwo">
+            <div class="d-flex align-items-center"><i class="fa-solid fa-sort-down"></i> TRANSLATIONAL DYNAMICS
+              FOR ADVANCED AND OLYMPIADS</div>
+          </button>
+        </h2>
+        <div id="4" class="accordion-collapse collapse show">
+          <div class="accordion-body">
+            <div class="d-flex flex-column">
+              <div class="py-0 HOVER2">
+                <div class="d-flex flex-row ms-3">
+                  <div class="px-0 py-2"><i class="fa-solid fa-video"></i></div>
+                  <div class="px-1 py-2 lecture">Lecture 4.1</div>
+                  <div class="p-2 ms-5"><a href="#" class="links">(M21) CONSERVATION OF STRINGS</a></div>
+                </div>
+              </div>
+              <div class="py-0 HOVER2">
+                <div class="d-flex flex-row ms-3">
+                  <div class="px-0 py-2"><i class="fa-solid fa-video"></i></div>
+                  <div class="px-1 py-2 lecture">Lecture 4.2</div>
+                  <div class="p-2 ms-5"><a href="#" class="links">(M22) ATWOOD'S MACHINE 1 & 2, BASIC THEORY OF PULLEYS</a></div>
+                </div>
+              </div>
+              <div class="py-0 HOVER2">
+                <div class="d-flex flex-row ms-3">
+                  <div class="px-0 py-2"><i class="fa-solid fa-video"></i></div>
+                  <div class="px-1 py-2 lecture">Lecture 4.3</div>
+                  <div class="p-2 ms-5"><a href="#" class="links">(M23) ATWOOD'S 3,4 AND 5***, ADVANCED LEVEL METHODS OF SOLVING CONSTRAINTS,
+                    ADV+</a></div>
+                </div>
+              </div>
+              <div class="py-0 HOVER2">
+                <div class="d-flex flex-row ms-3">
+                  <div class="px-0 py-2"><i class="fa-solid fa-video"></i></div>
+                  <div class="px-1 py-2 lecture">Lecture 4.4</div>
+                  <div class="p-2 ms-5"><a href="#" class="links">(M24) ATM 6** AND CONCEPT OF EQUIVALENT MASS FOR INFINITE ATWOOD'S MACHINE</a>
+                  </div>
+                </div>
+              </div>
+              <div class="py-0 HOVER2">
+                <div class="d-flex flex-row ms-3">
+                  <div class="px-0 py-2"><i class="fa-solid fa-video"></i></div>
+                  <div class="px-1 py-2 lecture">Lecture 4.5</div>
+                  <div class="p-2 ms-5"><a href="#" class="links">(M25) INFINITE ATM</a></div>
+                </div>
+              </div>
+              <div class="py-0 HOVER2">
+                <div class="d-flex flex-row ms-3">
+                  <div class="px-0 py-2"><i class="fa-solid fa-video"></i></div>
+                  <div class="px-1 py-2 lecture">Lecture 4.6</div>
+                  <div class="p-2 ms-5"><a href="#" class="links">(M26) COM: BASICS</a></div>
+                </div>
+              </div>
+              <div class="py-0 HOVER2">
+                <div class="d-flex flex-row ms-3">
+                  <div class="px-0 py-2"><i class="fa-solid fa-video"></i></div>
+                  <div class="px-1 py-2 lecture">Lecture 4.7</div>
+                  <div class="p-2 ms-5"><a href="#" class="links">(M27) COM OF SOLID SPHERICAL CAP</a></div>
+                </div>
+              </div>
+              <div class="py-0 HOVER2">
+                <div class="d-flex flex-row ms-3">
+                  <div class="px-0 py-2"><i class="fa-solid fa-video"></i></div>
+                  <div class="px-1 py-2 lecture">Lecture 4.8</div>
+                  <div class="p-2 ms-5"><a href="#" class="links">(M28) COM OF RIGHT TRIANGLE, HOLLOW AND SOLID CONE</a></div>
+                </div>
+              </div>
+              <div class="py-0 HOVER2">
+                <div class="d-flex flex-row ms-3">
+                  <div class="px-0 py-2"><i class="fa-solid fa-video"></i></div>
+                  <div class="px-1 py-2 lecture">Lecture 4.9</div>
+                  <div class="p-2 ms-5"><a href="#" class="links">(M29) COM OF A PLATED TRIANGLE, CONCEPT OF USING VECTORS IN COM!</a></div>
+                </div>
+              </div>
+              <div class="py-0 HOVER2">
+                <div class="d-flex flex-row ms-3">
+                  <div class="px-0 py-2"><i class="fa-solid fa-video"></i></div>
+                  <div class="px-1 py-2 lecture">Lecture 4.10</div>
+                  <div class="p-2 ms-5"><a href="#" class="links">(M31) FRACTALS ***</a></div>
+                </div>
+              </div>
+              <div class="py-0 HOVER2">
+                <div class="d-flex flex-row ms-3">
+                  <div class="px-0 py-2"><i class="fa-solid fa-video"></i></div>
+                  <div class="px-1 py-2 lecture">Lecture 4.11</div>
+                  <div class="p-2 ms-5"><a href="#" class="links">(M32) MOMENTUM CONSERVATION: BASICS</a></div>
+                </div>
+              </div>
+              <div class="py-0 HOVER2">
+                <div class="d-flex flex-row ms-3">
+                  <div class="px-0 py-2"><i class="fa-solid fa-video"></i></div>
+                  <div class="px-1 py-2 lecture">Lecture 4.12</div>
+                  <div class="p-2 ms-5"><a href="#" class="links">(M33) CONSTANT RATIO***</a></div>
+                </div>
+              </div>
+              <div class="py-0 HOVER2">
+                <div class="d-flex flex-row ms-3">
+                  <div class="px-0 py-2"><i class="fa-solid fa-video"></i></div>
+                  <div class="px-1 py-2 lecture">Lecture 4.13</div>
+                  <div class="p-2 ms-5"><a href="#" class="links">(M34) TRAPPED* AND ROTATION ABOUT COM</a></div>
+                </div>
+              </div>
+              <div class="py-0 HOVER2">
+                <div class="d-flex flex-row ms-3">
+                  <div class="px-0 py-2"><i class="fa-solid fa-video"></i></div>
+                  <div class="px-1 py-2 lecture">Lecture 4.14</div>
+                  <div class="p-2 ms-5"><a href="#" class="links">(M35) IMPULSE-MOMENTUM THEORY</a></div>
+                </div>
+              </div>
+              <div class="py-0 HOVER2">
+                <div class="d-flex flex-row ms-3">
+                  <div class="px-0 py-2"><i class="fa-solid fa-video"></i></div>
+                  <div class="px-1 py-2 lecture">Lecture 4.15</div>
+                  <div class="p-2 ms-5"><a href="#" class="links">(M36) IMPULSE-MOMENTUM THEORY ADV. QUESTION</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button custom-accordion-button" type="button" data-bs-toggle="collapse"
+            data-bs-target="#5" aria-expanded="true" aria-controls="panelsStayOpen-collapseTwo">
+            <div class="d-flex align-items-center"><i class="fa-solid fa-sort-down"></i> ROTATIONAL DYNAMICS:
+              TOUGHEST PHASE OF JEE ADVANCED.</div>
+          </button>
+        </h2>
+        <div id="5" class="accordion-collapse collapse show">
+          <div class="accordion-body">
+            <div class="d-flex flex-column">
+              <div class="py-0 HOVER">
+                <div class="d-flex flex-row ms-3">
+                  <div class="px-0 py-2"><i class="fa-solid fa-video"></i></div>
+                  <div class="px-1 py-2 lecture">Lecture 5.1</div>
+                  <div class="p-2 ms-5"><a href="#" class="links">ANGULAR MOMENTUM ABOUT A GENERAL AXIS, Z COMPONENT OF ANG.MOMENTUM, ADV.
+                    THEORY</a></div>
+                </div>
+              </div>
+              <div class="py-0 HOVER2">
+                <div class="d-flex flex-row ms-3">
+                  <div class="px-0 py-2"><i class="fa-solid fa-video"></i></div>
+                  <div class="px-1 py-2 lecture">Lecture 5.2</div>
+                  <div class="p-2 ms-5"><a href="#" class="links"></a>*** CUBE FRACTAL</div>
+                </div>
+              </div>
+              <div class="py-0 HOVER2">
+                <div class="d-flex flex-row ms-3">
+                  <div class="px-0 py-2"><i class="fa-solid fa-video"></i></div>
+                  <div class="px-1 py-2 lecture">Lecture 5.3</div>
+                  <div class="p-2 ms-5"><a href="#" class="links">ADV. KINEMATICS OF A LEANING LADDER: METHOD OF INTEGRATING FACTORS.</a></div>
+                </div>
+              </div>
+              <div class="py-0 HOVER2">
+                <div class="d-flex flex-row ms-3">
+                  <div class="px-0 py-2"><i class="fa-solid fa-video"></i></div>
+                  <div class="px-1 py-2 lecture">Lecture 5.4</div>
+                  <div class="p-2 ms-5"><a href="#" class="links">CYCLOID - THEORY, PURE ROLLING BASICS</a></div>
+                </div>
+              </div>
+              <div class="py-0 HOVER2">
+                <div class="d-flex flex-row ms-3">
+                  <div class="px-0 py-2"><i class="fa-solid fa-video"></i></div>
+                  <div class="px-1 py-2 lecture">Lecture 5.5</div>
+                  <div class="p-2 ms-5"><a href="#" class="links">**** CONE ABOUT SLANTED AXIS (4 STAR PROBLEM)</a></div>
+                </div>
+              </div>
+              <div class="py-0 HOVER2">
+                <div class="d-flex flex-row ms-3">
+                  <div class="px-0 py-2"><i class="fa-solid fa-video"></i></div>
+                  <div class="px-1 py-2 lecture">Lecture 5.6</div>
+                  <div class="p-2 ms-5"><a href="#" class="links">CYLINDER WITH LIQUID GEOMETRICAL EXPLOITATION</a></div>
+                </div>
+              </div>
+              <div class="py-0 HOVER2">
+                <div class="d-flex flex-row ms-3">
+                  <div class="px-0 py-2"><i class="fa-solid fa-video"></i></div>
+                  <div class="px-1 py-2 lecture">Lecture 5.7</div>
+                  <div class="p-2 ms-5"><a href="#" class="links">DESMOS:DISC INSIDE CYLINDER OF DOUBLE RADIUS</a></div>
+                </div>
+              </div>
+              <div class="py-0 HOVER2">
+                <div class="d-flex flex-row ms-3">
+                  <div class="px-0 py-2"><i class="fa-solid fa-video"></i></div>
+                  <div class="px-1 py-2 lecture">Lecture 5.8</div>
+                  <div class="p-2 ms-5"><a href="#" class="links">CYLINDER WITH LIQUID METHOD 1</a></div>
+                </div>
+              </div>
+              <div class="py-0 HOVER2">
+                <div class="d-flex flex-row ms-3">
+                  <div class="px-0 py-2"><i class="fa-solid fa-video"></i></div>
+                  <div class="px-1 py-2 lecture">Lecture 5.9</div>
+                  <div class="p-2 ms-5"><a href="#" class="links">TOUGHEST TRAJECTORY DOUBLE AND TRIPLE ROLLING, HEIGHT OF PHYSICS IN JEE
+                    ADVANCED</a></div>
+                </div>
+              </div>
+              <div class="py-0 HOVER2">
+                <div class="d-flex flex-row ms-3">
+                  <div class="px-0 py-2"><i class="fa-solid fa-video"></i></div>
+                  <div class="px-1 py-2 lecture">Lecture 5.10</div>
+                  <div class="p-2 ms-5"><a href="#" class="links">ROLLING UNLEASHED IN DESMOS VISUALS OF TRIPLE ROLLING</a></div>
+                </div>
+              </div>
+              <div class="py-0 HOVER2">
+                <div class="d-flex flex-row ms-3">
+                  <div class="px-0 py-2"><i class="fa-solid fa-video"></i></div>
+                  <div class="px-1 py-2 lecture">Lecture 5.11</div>
+                  <div class="p-2 ms-5"><a href="#" class="links">ROTATIONAL DYNAMICS, THEORY OF RIGID BODIES ABOUT STATIONARY AXIS, ADV+</a>
+                  </div>
+                </div>
+              </div>
+              <div class="py-0 HOVER2">
+                <div class="d-flex flex-row ms-3">
+                  <div class="px-0 py-2"><i class="fa-solid fa-video"></i></div>
+                  <div class="px-1 py-2 lecture">Lecture 5.12</div>
+                  <div class="p-2 ms-5"><a href="#" class="links">MOMENT OF INERTIA BASICS AND PARALLEL AND PERPENDICULAR AXIS THEOREMS</a></div>
+                </div>
+              </div>
+              <div class="py-0 HOVER2">
+                <div class="d-flex flex-row ms-3">
+                  <div class="px-0 py-2"><i class="fa-solid fa-video"></i></div>
+                  <div class="px-1 py-2 lecture">Lecture 5.13</div>
+                  <div class="p-2 ms-5"><a href="#" class="links">MOMENT OF INERTIA ADVANCED LEVEL SOLVING OF M.I,SOLID, HOLLOW CONES,
+                    CYLINDER</a></div>
+                </div>
+              </div>
+              <div class="py-0 HOVER2">
+                <div class="d-flex flex-row ms-3">
+                  <div class="px-0 py-2"><i class="fa-solid fa-video"></i></div>
+                  <div class="px-1 py-2 lecture">Lecture 5.14</div>
+                  <div class="p-2 ms-5"><a href="#" class="links">M.I OF CUBE ABOUT ANY AXIS, ADVANCED</a></div>
+                </div>
+              </div>
+              <div class="py-0 HOVER2">
+                <div class="d-flex flex-row ms-3">
+                  <div class="px-0 py-2"><i class="fa-solid fa-video"></i></div>
+                  <div class="px-1 py-2 lecture">Lecture 5.15</div>
+                  <div class="p-2 ms-5"><a href="#" class="links">MOMENT ABOUT SLANTED AXIS, UNCONVENTIONAL AXIS, VECOTRS</a></div>
+                </div>
+              </div>
+              <div class="py-0 HOVER2">
+                <div class="d-flex flex-row ms-3">
+                  <div class="px-0 py-2"><i class="fa-solid fa-video"></i></div>
+                  <div class="px-1 py-2 lecture">Lecture 5.16</div>
+                  <div class="p-2 ms-5"><a href="#" class="links">INTRODUCTION TO CTRM, ROLLING AND ANGULAR MOMENTUM'S APPLICATION</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+        <button class="accordion-button custom-accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#6" aria-expanded="true" aria-controls="panelsStayOpen-collapseTwo">
+        <div class="d-flex align-items-center"><i class="fa-solid fa-sort-down"></i> (6) ENERGY + MOMENTUM + ROTATION + TRANSLATION + CONSTRAINTS = DYNAMICS</div>
+          </button>
+        </h2>
+        <div id="6" class="accordion-collapse collapse show">
+          <div class="accordion-body">
+            <div class="d-flex flex-column">
+
+                <div class="py-0 HOVER2">
+                  <div class="d-flex flex-row ms-3">
+                    <div class="px-0 py-2"><i class="fa-solid fa-video"></i></div>
+                    <div class="px-1 py-2 lecture">Lecture 6.1</div>
+                    <div class="p-2 ms-5"><a href="#" class="links">SPRING MASS SYSTEM, ENERGY IN CENTRE OF MASS FRAME, REDUCED MASS OF THE SYSTEM</a></div>
+                  </div>
+                </div>
+
+                <div class="py-0 HOVER2">
+                  <div class="d-flex flex-row ms-3">
+                    <div class="px-0 py-2"><i class="fa-solid fa-video"></i></div>
+                    <div class="px-1 py-2 lecture">Lecture 6.2</div>
+                    <div class="p-2 ms-5"><a href="#" class="links">**** PURE ROLLING OF A SOLID CONE</a></div>
+                  </div>
+                </div>
+
+                <div class="py-0 HOVER2">
+                  <div class="d-flex flex-row ms-3">
+                    <div class="px-0 py-2"><i class="fa-solid fa-video"></i></div>
+                    <div class="px-1 py-2 lecture">Lecture 6.3</div>
+                    <div class="p-2 ms-5"><a href="#" class="links">*** SWEEPING DUSTER & METHOD OF INTEGRATING FACTORS.</a></div>
+                  </div>
+                </div>
+
+                <div class="py-0 HOVER2">
+                  <div class="d-flex flex-row ms-3">
+                    <div class="px-0 py-2"><i class="fa-solid fa-video"></i></div>
+                    <div class="px-1 py-2 lecture">Lecture 6.4</div>
+                    <div class="p-2 ms-5"><a href="#" class="links">SOLID ANGLES: FROM SCRATCH TO ADV+++</a></div>
+                  </div>
+                </div>
+
+                <div class="py-0 HOVER2">
+                  <div class="d-flex flex-row ms-3">
+                    <div class="px-0 py-2"><i class="fa-solid fa-video"></i></div>
+                    <div class="px-1 py-2 lecture">Lecture 6.5</div>
+                    
+
+                    <div class="p-2 ms-5">
+                      <span class="badge bg-danger mx-1">New</span>
+                      <a href="#" class="links">FINDING SOLID ANGLE USING GEOMETRY EXPLOITATION</a>
+                    </div>
+          
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+
+      <section id="scrollspyHeading3" class="heading3">
+        <div class="d-flex flex-row mt-3 mb-3 mb-0">
+          <h3>Instructor</h3>
+        </div>
+        <div class="card text-center bg-black"
+          style="color: white;border-left: solid 3px #494969;border-right:solid 3px #494969 ;">
+          <div class="card-header" style="background-color:#494969; color: white;">
+            Instructor
+          </div>
+          <div class="card-body">
+            <div class="d-flex flex-row align-items-center">
+              <div class="col-lg-4 d-flex flex-column">
+                <div class="d-flex flex-row mb-1 justify-content-center">
+                  <div class="d-flex p-2">
+                    <img src="/images/Profile-pic.png" class="img-fluid" width="150px" height="150px"
+                      style="border-radius: 100%;" alt="Profile-picture">
+                  </div>
+                </div>
+                <div class="d-flex flex-row mb-1 justify-content-center">
+                  <div class="d-flex p-1">
+                    <h4 class="card-title mt-1">Instructor Name</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-8 d-flex">
+                <div class="d-flex flex-row mb-3">
+                  <div class="d-flex p-2 align-items-center">
+                    Bio<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla condimentum aliquet purus,
+                    vitae dictum sem
+                    pretium in. Duis tincidunt fermentum condimentum. Morbi vulputate nibh eu enim condimentum, eu
+                    fringilla augue
+                    semper. Nam et porttitor lorem, a ultricies quam. Sed commodo non nulla semper elementum. Fusce id
+                    orci eu
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex flex-row justify-content-center">
+              <a href="#" class="btn Quad-btn-2">View profile</a>
+            </div>
+          </div>
+          <div class="card-footer" style="background-color:#494969; color: white;">
+            Last updated 3 days ago.
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+
+  
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="/course-details.js"></script>
+  <script src="/braces-and-toggler.js"></script>
+</body>
+
+</html>

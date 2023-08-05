@@ -1,0 +1,135 @@
+.form-control {
+    border-radius: 0;
+    background-color: blanchedalmond;
+}
+
+.form-control:focus {
+    background-color: blanchedalmond;
+    box-shadow: 0 0 20px blanchedalmond;
+    border: solid 1px blanchedalmond;
+}
+
+.form-text {
+    color: white;
+}
+
+.register-button {
+    border-radius: 0;
+    width: 100%;
+}
+
+/* Creating a custom switch */
+.custom-switch {
+    display: inline-block;
+    position: relative;
+    width: 40px;
+    height: 20px;
+}
+
+.custom-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.custom-switch label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: blanchedalmond;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.custom-switch label::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    width: 16px;
+    height: 16px;
+    background-color: black;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.custom-switch input:checked+label {
+    background-color: red;
+}
+
+.custom-switch input:checked+label::before {
+    transform: translateX(21px);
+}
+
+.custom-switch input:focus+label,
+.custom-switch input:focus+label::before {
+    outline: none;
+    box-shadow: none;
+}
+
+.custom-switch label:focus,
+.custom-switch input:focus+label {
+    outline: none;
+    box-shadow: none;
+}
+
+.card {
+    margin: 15px;
+}
+
+.form-card {
+    background-color: #0d1a26;
+    color: white;
+}
+
+.card-text {
+    text-align: center;
+}
+
+.red {
+    color: red;
+    text-decoration: none;
+}
+
+
+.icon-container {
+    position: absolute;
+    top: calc(270px - 45px); /* Adjust the positioning as needed */
+    left: calc(50% - 45px); /* Adjust the positioning as needed */
+    width: 90px; /* Adjust the width of the circular container */
+    height: 90px; /* Adjust the height of the circular container */
+    border-radius: 50%;
+    background-color: black; /* Set the desired background color for the circular container */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+  }
+
+
+  @media ( max-width:992px) {
+    .icon-container {
+        top: calc(var(--form-card-height) - 45px);
+    }
+  }
+
+  
+  :root {
+    --form-card-height: auto; /* Default value */
+  }
+
+  
+
+
+
+
+
+
+
+  
+  
+  

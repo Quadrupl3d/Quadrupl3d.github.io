@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <!-- Font awesome -->
+  <script src="https://kit.fontawesome.com/6cba281947.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.0/css/all.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-solid.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-regular.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-light.css">
+
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Rubik:wght@300;400;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap & jQuery-->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/course-details.css">
+
+  <meta charset="utf-8">
+  <title>Quadrupl3d</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="HEADER" id="header">
+    <div class="d-flex flex-row">
+      <div class="d-flex me-auto p-2 mx-3">
+        <div class="align-self-center"><a class="register-link" href="#"><i class="fa-solid fa-cube"
+              style="color: #ff0000;"></i> Register/Sign-In</button></a></div>
+      </div>
+      <div class="d-flex p-2 mx-3 my-2">
+        <div class="align-self-center"><a href="#">
+            <button type="button" class="btn btn-sm Quad-btn-1 ms-auto">Login</button>
+          </a></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark NAVBAR" id="navbar">
+    <a class="navbar-brand ms-3 me-2 pt-2" href="#"><img src="images/LOGO.png" alt="image" width="60px;"
+        height="60px;">uadrupl<span class="span">3</span>d</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fa-solid fa-bars fa-fade" style="color: #ff0505;"></i>
+    </button>
+    <div class="offcanvas offcanvas-start" id="navbarNav" tabindex="-1" aria-labelledby="navbarNavLabel">
+      <div class="offcanvas-header justify-content-center">
+        <h5 class="offcanvas-title mx-auto" id="navbarNavLabel"><img src="images/LOGO.png" alt="image" width="50px;"
+            height="50px;">uadrupl<span class="span">3</span>d</h5>
+        <i class="fa-sharp fa-solid fa-xmark fa-lg enlarge-on-hover" id="closeOffcanvas" style="color: #ff0f0f;"></i>
+      </div>
+      <div class="offcanvas-body">
+        <div class="d-flex justify-content-center">
+          <ul class="navbar-nav justify-content-start flex-wrap">
+
+
+            <li class="nav-item d-flex flex-row justify-content-center">
+              <div class="d-flex align-items-center item">
+                <div class="bracket">
+                  <span class="bracket-content-left">{</span>
+                </div>
+                <div class="hoverable">
+                  <a class="nav-link" href="#">Home</a>
+                </div>
+                <div class="bracket">
+                  <span class="bracket-content-right">}</span>
+                </div>
+              </div>
+            </li>
+
+
+            <li class="nav-item d-flex flex-row justify-content-center">
+              <div class="d-flex align-items-center item">
+                <div class="bracket">
+                  <span class="bracket-content-left">{</span>
+                </div>
+                <div class="hoverable">
+                  <a class="nav-link" href="#">Channels</a>
+                </div>
+                <div class="bracket">
+                  <span class="bracket-content-right">}</span>
+                </div>
+              </div>
+            </li>
+
+            <li class="nav-item d-flex flex-row justify-content-center">
+              <div class="d-flex align-items-center item">
+                <div class="bracket">
+                  <span class="bracket-content-left">{</span>
+                </div>
+                <div class="hoverable">
+                  <a class="nav-link" href="#">Courses</a>
+                </div>
+                <div class="bracket">
+                  <span class="bracket-content-right">}</span>
+                </div>
+              </div>
+            </li>
+
+
+            <li class="nav-item d-flex flex-row justify-content-center">
+              <div class="d-flex align-items-center item">
+                <div class="bracket">
+                  <span class="bracket-content-left double">{</span>
+                </div>
+                <div class="hoverable">
+                  <a class="nav-link" href="#">Bug Bounty</a>
+                </div>
+                <div class="bracket">
+                  <span class="bracket-content-right double">}</span>
+                </div>
+              </div>
+            </li>
+
+            <li class="nav-item d-flex flex-row justify-content-center">
+              <div class="d-flex align-items-center item">
+                <div class="bracket">
+                  <span class="bracket-content-left">{</span>
+                </div>
+                <div class="hoverable">
+                  <a class="nav-link" href="#">Services</a>
+                </div>
+                <div class="bracket">
+                  <span class="bracket-content-right">}</span>
+                </div>
+              </div>
+            </li>
+
+
+            <li class="nav-item d-flex flex-row justify-content-center">
+              <div class="d-flex align-items-center item">
+                <div class="bracket">
+                  <span class="bracket-content-left double">{</span>
+                </div>
+                <div class="hoverable">
+                  <a class="nav-link" href="#">Quadrupl<span class="span">3</span>d Merchandise</a>
+                </div>
+                <div class="bracket">
+                  <span class="bracket-content-right double">}</span>
+                </div>
+              </div>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li> -->
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- Breadcrumb -->
+  <section id="Breadcrumb">
+    <nav class="bread" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a class="BCIT" href="#">Home</a></li>
+        <li class="breadcrumb-item"><a class="BCIT" href="#">Courses</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Course name</li>
+      </ol>
+    </nav>
+  </section>
+
+  <section id="Course-teaser">
+    <div class="d-flex flex-row mt-3">
+      <h1>Course name</h1>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="d-flex flex-row mb-1 flex-wrap">
+          <div class="p-1">
+            <div class="d-flex flex-column mb-1 COL">
+              <div class="p-2"><i class="fa-solid fa-chalkboard-user" style="color: #ff0000;"></i> Mentor</div>
+              <div class="p-2">Instructor name</div>
+            </div>
+          </div>
+          <div class="p-1">
+            <div class="d-flex flex-column mb-1 COL">
+              <div class="p-2"><i class="fa-solid fa-barcode" style="color: #ff0000;"></i> Tier</div>
+              <div class="p-2">IV</div>
+            </div>
+          </div>
+          <div class="p-1">
+            <div class="d-flex flex-column mb-1 COL">
+              <div class="p-2"><i class="fa-solid fa-video" style="color: #ff0000;"></i> Lectures</div>
+              <div class="p-2">111</div>
+            </div>
+          </div>
+          <div class="p-1">
+            <div class="d-flex flex-column mb-1 COL">
+              <div class="p-2"><i class="fa-solid fa-clock" style="color: #ff0000;"></i> Duration</div>
+              <div class="p-2">3 hours</div>
+            </div>
+          </div>
+          <div class="p-1">
+            <div class="d-flex flex-column mb-1 COL">
+              <div class="p-2"><i class="fa-solid fa-user-group" style="color: #ff0000;"></i> Students</div>
+              <div class="p-2">0</div>
+            </div>
+          </div>
+          <div class="p-1">
+            <div class="d-flex flex-column mb-1 COL">
+              <div class="p-2"><i class="fa-solid fa-star" style="color: #ff0000;"></i> Review</div>
+              <div class="p-2"><a><i class="STAR fa-regular fa-star" style="color: #ff0000;"></i>
+                  <i class="STAR fa-regular fa-star" style="color: #ff0000;"></i>
+                  <i class="STAR fa-regular fa-star" style="color: #ff0000;"></i>
+                  <i class="STAR fa-regular fa-star" style="color: #ff0000;"></i>
+                  <i class="STAR fa-regular fa-star" style="color: #ff0000;"></i></a>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="p-1 d-flex">
+            <div class="d-flex flex-column mb-1 COLF">
+              
+
+              <div class="d-flex justify-content-center my-1">
+              <div class="d-flex flex-row mt-1 mb-1" style="width: 180px;">
+                <div class="d-flex content align-self-center">
+                  <a href="#" class="links"> Add to cart</a>
+                </div>
+                <div class="ms-auto">
+                  <button type="button" class="btn register-button Quad-btn-3 add-to-cart">
+                    <h6><i class="fa-solid fa-cart-plus" style="color: white;"></i></h6>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+      
+            
+
+              <div class="d-flex justify-content-center mb-1">
+                  <div class="mb-0">
+                  <button type="submit" class="btn Quad-btn-3 register-button" style="width: 180px;">Buy now at <i class="fa-solid fa-indian-rupee-sign"></i>3000</button>
+                  </div>
+              </div>
+
+        
+            </div>
+          </div>
+
+
+
+    
+
+          <!-- <div class="d-flex p-1">
+            <div class="d-flex flex-row align-self-center pricing justify-content-center">
+              <div class="d-flex align-items-center">
+                <div class="cart m-0">
+                  <span class="bracket-content-l">{</span>
+                </div>
+                <div class="d-flex flex-wrap price justify-content-center mx-2">
+                  <a class="add-to-cart" href="#"><i class="fa-sharp fa-solid fa-cart-plus" style="color: #ff0000;"></i>
+                    Add to cart</a>
+                  <a class="add-to-cart mt-1" href="#"><span class="mt-2">Buy <i
+                        class="fa-solid fa-indian-rupee-sign"></i> 4000/-</span></a>
+                </div>
+                <div class="cart mt-0">
+                  <span class="bracket-content-r">}</span>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+        </div>
+      </div>
+
+      <div class="col-lg-4" id="video-player-container">
+        <div class="d-flex p-2">
+          <div class="d-flex align-self-center">
+            <div class="d-flex justify-content-center">
+              <video id="video-player" controls>
+                <source src="videos/video.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="SCROLLSPY">
+    <nav id="navbar-example2" class="navbar navbar-dark px-3 mb-3">
+      <ul class="nav nav-pills nav-fill">
+        <li class="d-flex">
+          <a class="nav-link HOVER1 justify-content-center" href="#scrollspyHeading1" tabindex="0">Description</a>
+        </li>
+        <li class="d-flex">
+          <a class="nav-link HOVER1 justify-content-center" href="#scrollspyHeading2">Curriculum</a>
+        </li>
+        <li class="d-flex">
+          <a class="nav-link HOVER1 justify-content-center" href="#scrollspyHeading3">Instructor</a>
+        </li>
+      </ul>
+    </nav>
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
+      data-bs-smooth-scroll="true" class="p-3" tabindex="0" style="background-color: #1f1f2d; color: #d9d9d9;">
+      <section id="scrollspyHeading1" class="heading1">
+        <div class="d-flex flex-row mt-2">
+          <h3>Detailed course description</h3>
+        </div>
+        <div class="row mb-2">
+          <div class="col-md-7 mb-3">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla condimentum aliquet purus, vitae dictum sem
+            pretium in. Duis tincidunt fermentum condimentum. Morbi vulputate nibh eu enim condimentum, eu fringilla
+            augue
+            semper. Nam et porttitor lorem, a ultricies quam. Sed commodo non nulla semper elementum. Fusce id orci eu
+            erat congue commodo. Integer lobortis lobortis facilisis. Vivamus nec felis quis diam elementum lacinia. Ut
+            elementum tincidunt euismod. Fusce eu vulputate augue. Integer a efficitur diam, ac venenatis augue. In
+            pharetra felis dolor. Sed aliquam enim non ligula suscipit dictum. Vestibulum ornare vel odio eget luctus.
+            Ut
+            euismod enim non diam consequat luctus.
+          </div>
+
+          <div class="col">
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" data-pause="hover"
+              style="border: solid 3px #494969">
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2000">
+                  <img src="images/localhost.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img src="images/Rubik Medium.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img src="images/localhost.png" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="row mt-3 mb-3">
+          <div class="col">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a sollicitudin augue. Praesent quis eros
+              consequat, volutpat justo sit amet, venenatis ipsum. Donec dapibus, est sed hendrerit finibus, risus ipsum
+              luctus dui, quis consectetur ligula purus eu mi. Quisque erat dui, tempus eget vestibulum vitae,
+              vestibulum a purus. Donec euismod urna mauris, id faucibus quam dictum non. Class aptent taciti sociosqu
+              ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean nec sem ante. Vestibulum ante ipsum
+              primis in faucibus orci luctus et ultrices posuere cubilia curae; Morbi finibus dolor in aliquam sagittis.
+
+              Nulla sollicitudin metus at leo tincidunt fermentum. Curabitur malesuada commodo suscipit. Ut quis diam
+              nec nisi posuere cursus. Fusce quis lorem et ligula aliquam cursus ac pharetra odio. Cras vehicula nisi ac
+              neque fermentum, sed sodales sem pellentesque. Etiam eget auctor felis. Fusce semper euismod eros ultrices
+              eleifend. Duis malesuada lorem non dapibus dignissim. Nunc eleifend risus nisl, ut aliquam nulla efficitur
+              et. Nulla a posuere nulla. Sed pretium, enim a euismod varius, purus ante pretium arcu, nec ultricies
+              ligula justo eu ipsum. Donec vehicula erat mi, et molestie leo cursus a. Nunc mattis turpis a eleifend
+              pretium.
+
+              Pellentesque ac dui finibus, consequat ligula sit amet, elementum dui. Aliquam quis tincidunt leo. Quisque
+              aliquam ex tortor, eget interdum turpis viverra et. Quisque id mollis odio, nec scelerisque lectus. Donec
+              pretium scelerisque neque, vel scelerisque diam. Duis at tempus lorem. Suspendisse risus justo, porttitor
+              tristique tortor sit amet, consequat convallis enim. Nullam lobortis et eros elementum fermentum.
+              Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum
+              accumsan, tellus id vehicula semper, libero diam laoreet sem, hendrerit commodo nunc mauris ac diam.
+              Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam
+              commodo consequat sapien, elementum lobortis erat dapibus eget. Mauris consectetur iaculis quam vitae
+              maximus. Praesent at mi vitae diam vestibulum convallis. Praesent ut luctus tortor, non aliquet risus.
+
+              Mauris eget nulla maximus, convallis turpis at, tempor ligula. Quisque sagittis sem purus, id varius est
+              tincidunt sed. Vivamus vitae enim eu tortor efficitur dapibus sed luctus sapien. Maecenas sollicitudin
+              commodo pellentesque. Etiam nisl tortor, imperdiet in velit sit amet, vestibulum tristique lorem. Morbi
+              semper id risus vel accumsan. Morbi posuere neque ut est dictum, at mollis ante varius. Nunc tristique mi
+              eu lorem porta posuere. Sed a mauris orci. Aliquam ex sem, aliquam in nunc at, volutpat fringilla nunc.
+              Quisque cursus ante massa, et pharetra ante convallis vitae.
+
+              Proin purus nulla, porttitor vel pharetra sit amet, ullamcorper vel leo. Aliquam rutrum arcu ut cursus
+              elementum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer
+              eget sodales lacus. Maecenas ut odio nunc. Aenean nec viverra arcu, eu ultrices augue. Nullam venenatis
+              maximus suscipit. Curabitur eu dui rutrum, iaculis enim in, porta elit.
+            </p>
+          </div>
+        </div>
+
+
+        <div class="d-flex flex-row pt-3">
+          <h3>What you'll Learn ?</h3>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <div class="d-flex flex-row mb-1 flex-wrap">
+              <div class="d-flex flex-column mb-1">
+                <div class="p-2"><i class="fa-solid fa-check" style="color: #494969;"></i> Outcome 1</div>
+                <div class="p-2"><i class="fa-solid fa-check" style="color: #494969;"></i> Outcome 1</div>
+                <div class="p-2"><i class="fa-solid fa-check" style="color: #494969;"></i> Outcome 1</div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="d-flex flex-row mb-1 flex-wrap">
+              <div class="d-flex flex-column mb-1">
+                <div class="p-2"><i class="fa-solid fa-check" style="color: #494969;"></i> Outcome 1</div>
+                <div class="p-2"><i class="fa-solid fa-check" style="color: #494969;"></i> Outcome 1</div>
+                <div class="p-2"><i class="fa-solid fa-check" style="color: #494969;"></i> Outcome 1</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="scrollspyHeading2" class="heading2">
+        <div class="d-flex flex-row mt-3">
+          <h3>Curriculum</h3>
+        </div>
+
+        <div class="accordion accordion-flush mb-3" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button custom-accordion-button" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                aria-controls="panelsStayOpen-collapseOne">
+                <div class="d-flex"><i class="fa-solid fa-sort-down"></i> Section-I Name</div>
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+              <div class="accordion-body p-0">
+                <div class="d-flex flex-column">
+                  <div class="py-0 HOVER2">
+                    <div class="d-flex flex-row ms-3">
+                      <div class="px-0 py-2"><i class="fa-solid fa-video"></i></div>
+                      <div class="px-1 py-2">Lecture 1.1</div>
+                      <a class="links align-self-center ms-2 px-1" href="#">
+                        <div class=""><i class="PREVIEW fa-sharp fa-regular fa-circle-play fa-xl"></i></div>
+                      </a>
+
+                      <div class="p-2 ms-auto">
+                        <a href="#" class="links">Lecture name</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="py-0 HOVER2">
+                    <div class="d-flex flex-row ms-3">
+                      <div class="px-0 py-2"><i class="fa-solid fa-video"></i></div>
+                      <div class="px-1 py-2">Lecture 1.2</div>
+                      <div class="p-2 ms-auto"><a href="#" class="links">Lecture name</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="py-0 HOVER2">
+                    <div class="d-flex flex-row ms-3">
+                      <div class="px-0 py-2"><i class="fa-solid fa-video"></i></div>
+                      <div class="px-1 py-2">Lecture 1.3</div>
+                      <div class="p-2 ms-auto">
+                        <a href="#" class="links">Lecture name</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <!-- <h2 class="accordion-header">
+              <button class="accordion-button collapsed custom-accordion-button" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseTwo">
+                <div class="d-flex"><i class="fa-solid fa-sort-down" style="color: #ff0000;"></i> Section-II Name</div>
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"> -->
+
+            <h2 class="accordion-header">
+              <button class="accordion-button custom-accordion-button" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true"
+                aria-controls="panelsStayOpen-collapseTwo">
+                <div class="d-flex"><i class="fa-solid fa-sort-down"></i> Section-II Name</div>
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show">
+              <div class="accordion-body p-0">
+                <div class="d-flex flex-column">
+                  <div class="py-0 HOVER2">
+                    <div class="d-flex flex-row ms-3">
+                      <div class="px-0 py-2"><i class="fa-solid fa-video"></i></div>
+                      <div class="px-1 py-2">Lecture 2.1</div>
+                      <div class="p-2 ms-auto">
+                        <a href="#" class="links">Lecture name</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="py-0 HOVER2">
+                    <div class="d-flex flex-row ms-3">
+                      <div class="px-0 py-2"><i class="fa-solid fa-video"></i></div>
+                      <div class="px-1 py-2">Lecture 2.2</div>
+                      <div class="p-2 ms-auto">
+                        <a href="#" class="links">Lecture name</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="py-0 HOVER2">
+                    <div class="d-flex flex-row ms-3">
+                      <div class="px-0 py-2"><i class="fa-solid fa-video"></i></div>
+                      <div class="px-1 py-2">Lecture 2.3</div>
+                      <div class="p-2 ms-auto">
+                        <a href="#" class="links">Lecture name</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+
+
+
+
+
+
+
+            <h2 class="accordion-header">
+              <button class="accordion-button custom-accordion-button" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="true"
+                aria-controls="panelsStayOpen-collapseThree">
+                <div class="d-flex"><i class="fa-solid fa-sort-down"></i> Section-III Name</div>
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse show">
+              <div class="accordion-body p-0">
+                <div class="d-flex flex-column">
+                  <div class="py-0 HOVER2">
+                    <div class="d-flex flex-row ms-3">
+                      <div class="px-0 py-2"><i class="fa-solid fa-video"></i></div>
+                      <div class="px-1 py-2">Lecture 3.1</div>
+                      <div class="p-2 ms-auto"><span class="badge bg-danger">New</span>
+                        <a href="#" class="links">Lecture name</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="py-0 HOVER2">
+                    <div class="d-flex flex-row ms-3">
+                      <div class="px-0 py-2"><i class="fa-solid fa-video"></i></div>
+                      <div class="px-1 py-2">Lecture 3.2</div>
+                      <div class="p-2 ms-auto"><span class="badge bg-danger">New</span>
+                        <a href="#" class="links">Lecture name</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="py-0 HOVER2">
+                    <div class="d-flex flex-row ms-3">
+                      <div class="px-0 py-2"><i class="fa-solid fa-video"></i></div>
+                      <div class="px-1 py-2">Lecture 3.3</div>
+                      <div class="p-2 ms-auto"><span class="badge bg-danger">New</span>
+                        <a href="#" class="links">Lecture name</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section id="scrollspyHeading3" class="heading3">
+        <div class="d-flex flex-row mt-3 mb-3 mb-0">
+          <h3>Instructor</h3>
+        </div>
+        <div class="card text-center bg-black"
+          style="color: white;border-left: solid 3px #494969;border-right:solid 3px #494969 ;">
+          <div class="card-header" style="background-color:#494969; color: white;">
+            Instructor
+          </div>
+          <div class="card-body">
+            <div class="d-flex flex-row align-items-center">
+              <div class="col-lg-4 d-flex flex-column">
+                <div class="d-flex flex-row mb-1 justify-content-center">
+                  <div class="d-flex p-2">
+                    <img src="images/Profile-pic.png" class="img-fluid" width="150px" height="150px"
+                      style="border-radius: 100%;" alt="Profile-picture">
+                  </div>
+                </div>
+                <div class="d-flex flex-row mb-1 justify-content-center">
+                  <div class="d-flex p-1">
+                    <h4 class="card-title mt-1">Instructor Name</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-8 d-flex">
+                <div class="d-flex flex-row mb-3">
+                  <div class="d-flex p-2 align-items-center">
+                    Bio<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla condimentum aliquet purus,
+                    vitae dictum sem
+                    pretium in. Duis tincidunt fermentum condimentum. Morbi vulputate nibh eu enim condimentum, eu
+                    fringilla augue
+                    semper. Nam et porttitor lorem, a ultricies quam. Sed commodo non nulla semper elementum. Fusce id
+                    orci eu
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex flex-row justify-content-center">
+              <a href="#" class="btn Quad-btn-2">View profile</a>
+            </div>
+          </div>
+          <div class="card-footer" style="background-color:#494969; color: white;">
+            Last updated 3 days ago.
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="course-details.js"></script>
+  <script src="braces-and-toggler.js"></script>
+</body>
+
+</html>

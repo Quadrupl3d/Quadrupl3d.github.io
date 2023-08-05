@@ -1,0 +1,111 @@
+h1 {
+  white-space: pre-wrap;
+  overflow: visible;
+  margin: 10% 5%;
+  padding: 6%;
+  text-align: center;
+  font-family: 'Rubik';
+  font-weight: 800px;
+  font-size: 4.2rem;
+  position: relative;
+  z-index: 2;
+}
+
+h2 {
+  text-align: center;
+  font-weight: 400px;
+  font-size: 3.1rem;
+  margin: 5% 0 0;
+}
+
+h3 {
+  text-align: center;
+  font-weight: 300px;
+  font-size: 2.3rem;
+  margin: 3%;
+  padding: 3% 3% 0;
+}
+
+h4 {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width:360px) and (max-width:990px) {
+  h1 {
+    margin: 5% 2%;
+    padding: 3%;
+    font-size: 3rem;
+  }
+
+  h2 {
+    text-align: center;
+    font-weight: 400px;
+    font-size: 2rem;
+    margin: 3% 0 0;
+  }
+
+  h3 {
+    text-align: center;
+    font-weight: 300px;
+    font-size: 1.3rem;
+    margin: 2%;
+    padding: 2%;
+  }
+}
+
+
+.typing-animation::after {
+  content: "_";
+  /* The character representing the vertical line */
+  vertical-align: bottom;
+  opacity: 1;
+  animation: typing 2s steps(40, end) forwards, blink 1s infinite;
+  color: white;
+  position: absolute;
+}
+
+@keyframes typing {
+  from {
+    height: 0;
+    opacity: 0;
+    /* Set opacity to 0 at the beginning of the animation */
+  }
+
+  to {
+    height: 1em;
+    opacity: 1;
+    /* Set opacity to 1 at the end of the animation */
+  }
+}
+
+/* Add a separate animation for blinking */
+@keyframes blink {
+  50% {
+    opacity: 0;
+    /* Make the symbol invisible at 50% of the animation */
+  }
+}
+
+.MP {
+  position: relative;
+  bottom: 220px;
+  z-index: 1;
+}
+
+/* Media Queries */
+@media (min-width:360px) and (max-width:990px) {
+  .MP {
+    position: static;
+  }
+  .typing-animation {
+    height: 300px;
+  }
+}
+
+#channels {
+  margin: 2% 5%;
+}
+
+

@@ -1,0 +1,238 @@
+.NAVBAR {
+  background-color: black;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+}
+
+.ENROLL {
+  color: red;
+}
+
+.HOVER1:hover {
+  color: white;
+  background-color:  #494969;  
+}
+.HOVER1:focus {
+  color: white;
+}
+.HOVER1 {
+  color: inherit;
+  text-decoration: none;
+}
+.hover-effect {
+  color: white;
+  background-color:  #494969; 
+}
+
+.HOVER2:hover {
+  color: #ff704d;
+  background-color:  black;  
+}
+
+.COL {
+  border: solid 2px white;
+  width: 190px;
+}
+.pricing {
+  width: 200px;
+  height: 90px;
+}
+.add-to-cart {
+  text-decoration: none;
+  color: inherit;
+}
+.price {
+  width: 110px;
+  
+}
+.cart {
+  font-size: 80px;
+  color: red;
+}
+.add-to-cart {
+  color: inherit;
+}
+
+.add-to-cart:hover {
+  color: #ff704d;
+}
+
+.accordion-header button.collapsed {
+  background-color: #15151e; 
+  color: white; 
+  border-top: solid 3px #8787ab;
+}
+/* .accordion-header button.collapsed:hover {
+  background-color: black;
+  color: #ff704d;
+} */
+/* .custom-accordion-button {
+  background-color: #ff0000; 
+  color: #ffffff; 
+} */
+.custom-accordion-button:not(.collapsed) {
+  background-color: #494969; 
+  color: white;
+}
+/* .custom-accordion-button:hover {
+  background-color: #0d1a26; 
+  color: #ffffff; 
+} */
+.accordion-item {
+  border: none; /* Remove the border around the accordion item */
+}
+.accordion-button:focus {
+  box-shadow: none !important; /* Remove the focus box-shadow */
+}
+.accordion-body {
+  background-color: black; /* Set the background color for the accordion content */
+  color: #fff;
+  padding: 0 5px;
+}
+.custom-accordion-button i {
+  margin-right: 10px; 
+}
+/* Define the animation */
+@keyframes rotate-icon {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+.fa-solid.fa-sort-down {
+  transition: transform 0.3s ease-in-out;
+  transform-origin: center;
+}
+
+.accordion-button[aria-expanded="true"] .fa-solid.fa-sort-down {
+  transform: rotate(180deg);
+}
+.accordion-button[aria-expanded="false"] .fa-solid.fa-sort-down {
+  transform: rotate(0deg);
+}
+.STAR {
+  color: #ff0000;
+  cursor: pointer;
+}
+#Course-teaser {
+  margin: 15px 4%;
+}
+#SCROLLSPY {
+  margin: 15px 4%;
+}
+.fixed-top {
+  margin: 0 4%;
+}
+.fixed-bottom {
+  margin: 0 4%;
+}
+.nav-pills .nav-link.active {
+  background-color: #494969;
+  color: white;
+  margin-inline: 3px;
+}
+em {
+  color: blanchedalmond;
+}
+.lecture {
+  white-space: nowrap;
+}
+
+
+#navbar-example2 {
+  background-color: #15151e;
+ border-bottom: solid 3px #8787ab;
+ border-top: solid 3px #8787ab;
+}
+
+.fa-sort-down {
+  color: white;
+}
+
+.links {
+  color: inherit;
+  text-decoration: none;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: none;
+}
+.accordion-button::after {
+  background-image: none;
+}
+
+.accordion {
+  --bs-accordion-border-width: none;
+}
+
+
+.register-button {
+  border-radius: 0;
+  width: 100%;
+  font-size: small;
+  height: 33px;
+  border: solid 1px #acacbe;
+}
+
+
+.COLF {
+  width: 190px;
+}
+
+.Quad-btn-3 {
+  color: white ;
+  transition: color 0.3s ease;
+  z-index: 2;
+  position: relative;
+  background-color: #b30000;
+  border: none;
+}
+.Quad-btn-3:hover {
+  color: white;
+  background-color: #cc0000;
+}
+.Quad-btn-3:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+@media (max-width:991px) {
+  .text {
+    font-size: small;
+  }
+}
+
+
+
+
+
+
+
+.transition {
+  transition: all 1s ease;
+}
+
+
+.hide {
+  opacity: 0;
+  transform: translateY(-100%);
+}
+
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+
+
+
+
+

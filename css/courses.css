@@ -1,0 +1,194 @@
+.NAVBAR {
+  background-color: black;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+}
+#Quadcourses {
+  margin: 15px 4%;
+}
+#Phycourses {
+  margin: 15px 4%;
+}
+
+.box {
+  width: 250px;
+  height: 410px;
+  color: white;
+  background-color: #343541;
+  border: 2px solid black;
+  border-radius: 0px;
+  text-align: center;
+  position: relative;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: #acacbe;
+  position: absolute;
+  top: 150px;
+  transform: translateY(-50%);
+}
+
+
+.icon-container {
+  position: absolute;
+  top: calc(150px - 20px); /* Adjust the positioning as needed */
+  left: calc(50% - 20px); /* Adjust the positioning as needed */
+  width: 40px; /* Adjust the width of the circular container */
+  height: 40px; /* Adjust the height of the circular container */
+  border-radius: 50%;
+  border: solid 2px #acacbe;
+  background-color: black; /* Set the desired background color for the circular container */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+}
+
+
+.img-container {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover; /* Add this line */
+}
+
+.custom {
+  height: 150px;
+  margin: 0;
+}
+.dots {
+  font-size: 5px;
+}
+
+.register-button {
+  border-radius: 0;
+  width: 100%;
+  font-size: small;
+  height: 33px;
+  border: solid 1px #acacbe;
+}
+
+.Quad-btn-3 {
+  background-color: black;
+  color: #F8F8F8 ;
+  transition: color 0.3s ease;
+  z-index: 2;
+  position: relative;
+}
+.Quad-btn-3:hover {
+  color: white;
+  background-color: #b30000;
+  
+}
+.Quad-btn-3:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+
+
+
+
+
+
+.links {
+  text-decoration: none;
+  color: inherit;
+}
+
+.box:hover .icon-container {
+  animation: glowing 3s infinite;
+  background-color: red;
+  border: none;
+}
+
+@keyframes glowing {
+  0% {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 20px 10px #ff0000; 
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+}
+.box:hover {
+  background-color: black;
+}
+.box:hover .links {
+  color: #ff704d;
+}
+
+.icons {
+  color: blanchedalmond; /* Set the desired color for the Font Awesome icon */
+  font-size: 24px; /* Adjust the font size as needed */
+}
+.icons-small {
+  color: blanchedalmond;
+  font-size: 20px;
+}
+
+@media (max-width:991.98px) {
+  .box {
+    width: 200px;
+  }
+  .box.FUV {
+    width: 200px;
+  }
+  .content {
+    font-size: small;
+  }
+  .course-title {
+    padding: 0 2px;
+  }
+  .audience {
+    padding: 0 5px;
+  }
+}
+
+
+.box {
+  position: relative;
+}
+
+.coming-soon-container {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: blanchedalmond;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.coming-soon-text {
+  margin: 0;
+  color: black;
+  font-size: small;
+}
+
+
+
+/* Featuring FUV on load */
+.box.hovered .icon-container {
+  animation: glowing 3s infinite;
+  color: white;
+  background-color: red;
+  border: none;
+}
+.box.hovered .icons {
+  color: white;
+}
+.box.hovered {
+  outline: none;
+  border-radius: 0;
+  background-color: black;
+}
+.box.hovered .custom {
+  background-color: blanchedalmond;
+
+}
+.box.hovered h1 {
+  color: black;
+}
